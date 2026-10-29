@@ -1,109 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" author="gebremedhn">
-        <title>ymy personal web</title>
-       <link href="https://fonts.google.com/specimen/Asset?query=Riccardo+De+Franceschi">
-        <style>
-            body{
-                background-color: antiquewhite;
-                font-family: Arial, Helvetica, sans-serif
-                margin: 20px;
-            }
-            .propic{
-                 border-radius:250%;
-                 height: 200px;
-                 width: 200px;
-                 object-fit: cover;
-            }
-            
-            
-            .gravitas-one-regular{
-                font-family: "gravitas One" ,serif;
-                font-weight: 400;
-                font-style: round;
-                color: blueviolet
-                font-size  :30px ;
-            }
-            .heading{
-                 color: blueviolet;
-                font-size:30px;
-            }
-            .red{
-                color: red;
-            }
-            
-hr{
-    border: none;
-    border-top: 3px dotted blue;
-    width: 50%;
-    margin: 20px 0;
-}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal portfolio of Gebremedhn Sisay, showcasing web development skills and projects.">
+  <meta name="author" content="Gebremedhn Sisay">
+  <meta name="theme-color" content="#101827">
+  <title>Gebremedhn Sisay | Developer Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Gebremedhn Sisay home">GS<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a class="nav-cta" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-/* Skill stars below each skill text */
-.skills-table th {
-    text-align: left;
-    padding-right: 15px;
-}
+  <main id="main">
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">HELLO, I'M</p>
+        <h1>Gebremedhn <span>Sisay</span></h1>
+        <p class="hero-role">Software engineering student &amp; aspiring web developer</p>
+        <p class="hero-description">I’m building my skills in web development by learning, creating projects, and improving one step at a time.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work</a>
+          <a class="button button-secondary" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Portfolio introduction">
+        <div class="avatar" aria-hidden="true">GS</div>
+        <p class="card-label">CURRENT FOCUS</p>
+        <h2>Learning by building</h2>
+        <p>HTML · CSS · JavaScript fundamentals</p>
+        <span class="status"><span aria-hidden="true"></span> Open to learning opportunities</span>
+      </div>
+    </section>
 
-.skills-table td {
-    padding-top: 5px;
-}
+    <section class="section container" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2>Curious, practical, and always learning.</h2>
+      </div>
+      <div class="about-panel">
+        <p>I’m Gebremedhn Sisay, a software engineering student interested in building useful, accessible, and easy-to-use web experiences. This portfolio is part of my journey to practise the fundamentals and share my progress.</p>
+        <p>My current goal is to strengthen my frontend foundations, build complete projects, and learn professional development habits such as clear documentation, testing, and maintainable code.</p>
+      </div>
+    </section>
 
-/* Dot separator for text line */
-.dot-separator::before {
-    content: "•";
-    margin: 0 5px;
-    color: black;
-}
-        </style>
-    </head>
-    <body>
-        <h1 class="heading">welcome to my personal web</h1>
-        <table>
-            <tr>
-                <td><img class="propic" src="https://tse4.mm.bing.net/th/id/OIP.3NBp12BIypI6vMAZr9b7KgHaE8?pid=ImgDet&w=179&h=119&c=7&o=7&rm=3" width="180"></td>
-                <td>
-                <p><b> </b></p>
-                <h3 class="gravitas-one-regular" >Gebremedhn sisay</h3>
-                <p> software engineer</b> at <i> Addis ababa </i></p>
-           <p>I am web developer who newly shape the world life style</p>
-                </td>
-            </tr>
-        </table>
-        <hr>
-        <h1 class="red">work experience</h1>
-        <ul>
-            <li>UX/UI</li>
-            <li>software developer</li>
-            <li>backend developer</li>
-        </ul>
-        <hr>
-        <h1 class="heading">skills</h1>
-        <table class="skills-table">
-            <tr>
-                <th>frontend</th>
-                <td>⭐⭐⭐</td>
-            </tr>
-            <tr>
-                <th>backend</th>
-                <td>⭐⭐⭐</td>
-            </tr>
-            <tr>
-                <th>database</th>
-                <td>⭐⭐⭐</td>
+    <section class="section section-muted" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">WHAT I'M LEARNING</p>
+          <h2>Skills &amp; technologies</h2>
+          <p class="section-intro">A snapshot of the areas I’m working on. I’ll update this list as my experience grows.</p>
+        </div>
+        <div class="skill-grid">
+          <article class="skill-card"><span class="skill-number">01</span><h3>HTML</h3><p>Semantic page structure and accessible markup.</p></article>
+          <article class="skill-card"><span class="skill-number">02</span><h3>CSS</h3><p>Layouts, styling, and responsive design.</p></article>
+          <article class="skill-card"><span class="skill-number">03</span><h3>JavaScript</h3><p>Building a foundation in browser interactivity.</p></article>
+        </div>
+      </div>
+    </section>
 
-            </tr>
+    <section class="section container" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2>Projects</h2>
+        <p class="section-intro">I’m starting with this portfolio and will add more projects as I build and document them.</p>
+      </div>
+      <article class="project-card">
+        <div class="project-mark" aria-hidden="true">&lt;/&gt;</div>
+        <div class="project-content">
+          <p class="project-type">PERSONAL PROJECT · IN PROGRESS</p>
+          <h3>Contact Me Freely — Portfolio</h3>
+          <p>A personal website to introduce me, describe my learning focus, and provide a place to showcase future work. This project is being improved with responsive styling, accessible navigation, and clearer documentation.</p>
+          <ul class="tag-list" aria-label="Technologies used"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <a class="text-link" href="https://github.com/yosefsisay18-byte/contact-me-freely">View source on GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+    </section>
 
-        </table>
-        <hr>
-        <P>contact me</P> 
-        <ul>
-            <li> <a href="@Fhdhjee">@Fhdhjee</a></li>
-            <li> <a href="TEL:+251945608031">+251945608031</a></li>
-        </ul>
+    <section class="section contact-section" id="contact">
+      <div class="container contact-inner">
+        <div>
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2>Have a question or an opportunity?</h2>
+          <p>I’m happy to connect about learning, collaboration, and web development.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-primary" href="https://github.com/yosefsisay18-byte">GitHub profile</a>
+          <a class="button button-secondary" href="https://github.com/yosefsisay18-byte/contact-me-freely">This repository</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-
-    </body>
-   
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="current-year">2026</span> Gebremedhn Sisay</p>
+      <p>Built with HTML, CSS, and JavaScript.</p>
+    </div>
+  </footer>
+</body>
 </html>
